@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:id="@+id/mark_layer">
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/iv_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/iv_status"
             android:layout_width="@dimen/ease_toolbar_status_size"
             android:layout_height="@dimen/ease_toolbar_status_size"

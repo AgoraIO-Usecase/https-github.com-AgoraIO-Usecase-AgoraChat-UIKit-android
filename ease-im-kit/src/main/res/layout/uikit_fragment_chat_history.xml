@@ -6,13 +6,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"
         app:titleBarDisplayHomeAsUpEnabled="true"/>
 
-    <com.hyphenate.easeui.feature.chat.chathistory.ChatUIKitHistoryLayout
+    <io.agora.chat.uikit.feature.chat.chathistory.ChatUIKitHistoryLayout
         android:id="@+id/layout_chat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

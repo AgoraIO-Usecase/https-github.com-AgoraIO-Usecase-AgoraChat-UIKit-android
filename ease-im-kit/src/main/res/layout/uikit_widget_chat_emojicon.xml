@@ -5,17 +5,17 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitEmojiScrollTabBar
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitEmojiScrollTabBar
         android:id="@+id/tab_bar"
         style="@style/ease_chat_emoji_scroll_tabbar_style" />
 
     <View style="@style/ease_chat_emoji_tabbar_divider_style" />
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitEmojiconPagerView
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitEmojiconPagerView
         android:id="@+id/pager_view"
         style="@style/ease_chat_emoji_pager_style" />
     
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitEmojiconIndicatorView
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitEmojiconIndicatorView
         android:id="@+id/indicator_view"
         style="@style/ease_chat_emoji_indicator_style" />
 

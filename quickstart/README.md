@@ -62,8 +62,8 @@ implementation(project(mapOf("path" to ":ease-im-kit")))
 在 `/Gradle Scripts/proguard-rules.pro` 文件中添加如下代码：
 
 	```
-	-keep class com.hyphenate.** {*;}
-    -dontwarn  com.hyphenate.**
+	-keep class io.agora.** {*;}
+    -dontwarn  io.agora.**
 	```
 ## 实现单聊发消息
 
@@ -149,20 +149,20 @@ implementation(project(mapOf("path" to ":ease-im-kit")))
 打开 `MainActivity` 文件，并替换为如下代码：
 
 ```kotlin
-package com.easemob.quickstart
+package io.agora.quickstart
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.easemob.quickstart.databinding.ActivityMainBinding
-import com.hyphenate.easeui.EaseIM
-import com.hyphenate.easeui.common.ChatConnectionListener
-import com.hyphenate.easeui.common.ChatLog
-import com.hyphenate.easeui.common.ChatOptions
-import com.hyphenate.easeui.feature.messages.EaseChatType
-import com.hyphenate.easeui.feature.messages.activities.EaseChatActivity
+import io.agora.quickstart.databinding.ActivityMainBinding
+import io.agora.chat.uikit.EaseIM
+import io.agora.chat.uikit.common.ChatConnectionListener
+import io.agora.chat.uikit.common.ChatLog
+import io.agora.chat.uikit.common.ChatOptions
+import io.agora.chat.uikit.feature.messages.EaseChatType
+import io.agora.chat.uikit.feature.messages.activities.EaseChatActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

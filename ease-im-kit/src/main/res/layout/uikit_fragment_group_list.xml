@@ -6,12 +6,12 @@
     android:background="@color/ease_color_background"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_contact"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"/>
 
-    <com.hyphenate.easeui.widget.RefreshLayout
+    <io.agora.chat.uikit.widget.RefreshLayout
         android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -21,6 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </com.hyphenate.easeui.widget.RefreshLayout>
+    </io.agora.chat.uikit.widget.RefreshLayout>
 
 </LinearLayout>

@@ -25,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             style="@style/ease_chat_row_send_top_bubble_style" />
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/iv_userhead"
             style="@style/ease_chat_row_send_avatar_style"
             app:layout_constraintBottom_toBottomOf="@id/bubble"

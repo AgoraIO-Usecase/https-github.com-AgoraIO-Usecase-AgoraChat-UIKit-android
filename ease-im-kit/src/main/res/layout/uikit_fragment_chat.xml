@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"
@@ -19,7 +19,7 @@
         android:id="@+id/chat_header_divider"
         style="@style/ease_chat_title_bar_divider"/>
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitLayout
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitLayout
         android:id="@+id/layout_chat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hyphenate.easeui.widget.ChatUIKitArrowItemView
+    <io.agora.chat.uikit.widget.ChatUIKitArrowItemView
         android:id="@+id/content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

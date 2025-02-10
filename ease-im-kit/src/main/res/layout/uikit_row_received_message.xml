@@ -25,7 +25,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/ease_chat_row_receive_top_bubble_style" />
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/iv_userhead"
             app:layout_constraintStart_toEndOf="@id/rb_select"
             app:layout_constraintBottom_toBottomOf="@id/bubble"

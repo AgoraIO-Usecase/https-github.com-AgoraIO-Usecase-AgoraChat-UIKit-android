@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="54dp">
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/avatar"
         android:layout_width="32dp"
         android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_conversations"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"
@@ -16,11 +16,11 @@
         app:titleBarTitleTextColor="@color/ease_color_on_background_low"
         app:titleBarMenuTitleColor="@color/ease_color_on_background_low"/>
 
-    <com.hyphenate.easeui.widget.ChatUIKitSearchView
+    <io.agora.chat.uikit.widget.ChatUIKitSearchView
         android:id="@+id/search_bar"
         style="@style/ease_widget_search_view"/>
 
-    <com.hyphenate.easeui.feature.conversation.widgets.ChatUIKitConversationListLayout
+    <io.agora.chat.uikit.feature.conversation.widgets.ChatUIKitConversationListLayout
         android:id="@+id/list_conversation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

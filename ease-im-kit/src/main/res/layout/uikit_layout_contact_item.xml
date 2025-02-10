@@ -14,7 +14,7 @@
         style="@style/ease_contact_list_item_initial"
         android:visibility="gone" />
 
-    <com.hyphenate.easeui.widget.ChatUIKitCustomAvatarView
+    <io.agora.chat.uikit.widget.ChatUIKitCustomAvatarView
         android:id="@+id/em_presence"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header"

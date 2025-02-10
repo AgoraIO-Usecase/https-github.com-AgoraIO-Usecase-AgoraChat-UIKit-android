@@ -61,7 +61,7 @@
         android:scaleType="centerInside"
         android:src="@drawable/uikit_topic_count_icon"/>
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/iv_user_icon"
         android:layout_width="14dp"
         android:layout_height="14dp"

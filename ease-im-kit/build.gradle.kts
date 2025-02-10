@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hyphenate.easeui"
+    namespace = "io.agora.chat.uikit"
     compileSdk = 34
 
     defaultConfig {
@@ -71,7 +71,7 @@ dependencies {
     implementation("io.github.scwang90:refresh-layout-kernel:2.1.0")
     implementation("io.github.scwang90:refresh-header-material:2.1.0")
     // Chat SDK
-    api("io.hyphenate:hyphenate-chat:4.12.0")
+	api("io.agora.rtc:chat-sdk:1.3.1")
 //    implementation(project(mapOf("path" to ":hyphenatechatsdk")))
 }
 

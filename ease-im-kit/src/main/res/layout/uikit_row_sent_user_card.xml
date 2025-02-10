@@ -17,7 +17,7 @@
             app:layout_constraintHorizontal_bias="0"
             style="@style/ease_row_radio_select_style"/>
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/iv_userhead"
             style="@style/ease_chat_row_send_avatar_style"
             app:layout_constraintBottom_toBottomOf="@id/bubble"
@@ -31,7 +31,7 @@
             app:layout_goneMarginEnd="@dimen/ease_size_12"
             style="@style/ease_chat_row_send_user_card_bubble_style">
 
-            <com.hyphenate.easeui.widget.ChatUIKitImageView
+            <io.agora.chat.uikit.widget.ChatUIKitImageView
                 android:id="@+id/head_Image_view"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/user_nick_name"

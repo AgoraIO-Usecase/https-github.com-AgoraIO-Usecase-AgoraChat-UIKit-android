@@ -26,7 +26,7 @@
         tools:text="nick"
         style="@style/ease_chat_message_reply_name_style" />
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/quote_image"
         app:layout_constraintEnd_toStartOf="@id/cancel_select"
         app:layout_constraintTop_toTopOf="parent"

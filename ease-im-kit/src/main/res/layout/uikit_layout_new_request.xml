@@ -7,7 +7,7 @@
     android:background="@color/ease_color_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"
@@ -15,7 +15,7 @@
         app:titleBarTitle="@string/uikit_new_invitation"
         app:titleBarMenuIconTint="@color/ease_color_on_background"/>
 
-    <com.hyphenate.easeui.widget.RefreshLayout
+    <io.agora.chat.uikit.widget.RefreshLayout
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@+id/title_bar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </com.hyphenate.easeui.widget.RefreshLayout>
+    </io.agora.chat.uikit.widget.RefreshLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         style="@style/ease_chat_message_sent_translation_status_style" />
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:scaleType="centerCrop"
         android:id="@+id/iv_translation"
         app:layout_constraintEnd_toStartOf="@+id/tv_translation_status"

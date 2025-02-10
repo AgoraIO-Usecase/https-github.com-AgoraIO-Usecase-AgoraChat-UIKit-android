@@ -23,7 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/iv_topic_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_topic_title"

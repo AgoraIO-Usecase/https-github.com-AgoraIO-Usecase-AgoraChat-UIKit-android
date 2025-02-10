@@ -52,7 +52,7 @@
                 android:visibility="visible"
                 android:inputType="text"/>
 
-            <com.hyphenate.easeui.widget.ChatUIKitImageView
+            <io.agora.chat.uikit.widget.ChatUIKitImageView
                 android:id="@+id/input_clear"
                 android:visibility="gone"
                 android:layout_alignParentEnd="true"

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/ease_size_4">
 
-    <com.hyphenate.easeui.widget.ChatUIKitFlowLayout
+    <io.agora.chat.uikit.widget.ChatUIKitFlowLayout
         android:id="@+id/flow_reaction_list"
         style="@style/ease_chat_message_reaction_flow_style" />
 

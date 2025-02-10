@@ -5,7 +5,7 @@
     android:id="@+id/cv_item_root"
     style="@style/ease_conv_item_root">
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/avatar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -5,7 +5,7 @@
     style="@style/ease_list_item_root"
     android:paddingVertical="10dp">
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/item_avatar"
         app:image_shape_type="rectangle"
         app:layout_constraintTop_toTopOf="parent"

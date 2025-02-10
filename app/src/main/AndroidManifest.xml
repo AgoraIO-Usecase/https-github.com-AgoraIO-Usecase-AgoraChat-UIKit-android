@@ -47,8 +47,8 @@
             android:configChanges="orientation|keyboardHidden|screenSize">
 
         </activity>
-        <activity android:name="com.hyphenate.easeui.demo.login.LoginActivity" />
-        <activity android:name="com.hyphenate.easeui.demo.login.SplashActivity"
+        <activity android:name="io.agora.chat.uikit.demo.login.LoginActivity" />
+        <activity android:name="io.agora.chat.uikit.demo.login.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,7 +56,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.hyphenate.easeui.demo.ChatActivity"
+        <activity android:name="io.agora.chat.uikit.demo.ChatActivity"
             android:exported="false"/>
         <activity android:name=".ChatThreadActivity"
             android:exported="false"/>

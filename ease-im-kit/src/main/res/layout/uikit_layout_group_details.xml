@@ -7,7 +7,7 @@
     android:background="@color/ease_color_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.hyphenate.easeui.widget.ChatUIKitImageView
+            <io.agora.chat.uikit.widget.ChatUIKitImageView
                 android:id="@+id/iv_group_avatar"
                 android:layout_marginTop="20dp"
                 app:image_shape_type="rectangle"
@@ -104,7 +104,7 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <com.hyphenate.easeui.widget.ChatUIKitArrowItemView
+            <io.agora.chat.uikit.widget.ChatUIKitArrowItemView
                 android:id="@+id/item_member_list"
                 android:layout_marginTop="20dp"
                 app:layout_constraintTop_toBottomOf="@+id/function_layout"
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp"/>
 
-            <com.hyphenate.easeui.widget.ChatUIKitSwitchItemView
+            <io.agora.chat.uikit.widget.ChatUIKitSwitchItemView
                 android:id="@+id/switch_item_disturb"
                 app:layout_constraintTop_toBottomOf="@+id/item_member_list"
                 app:switchItemTitle="@string/uikit_message_no_disturbance"
@@ -122,7 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp" />
 
-            <com.hyphenate.easeui.widget.ChatUIKitArrowItemView
+            <io.agora.chat.uikit.widget.ChatUIKitArrowItemView
                 android:id="@+id/item_clear"
                 app:layout_constraintTop_toBottomOf="@+id/switch_item_disturb"
                 app:arrowItemTitle="@string/uikit_clear_history"
@@ -139,7 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="12dp"/>
 
-            <com.hyphenate.easeui.widget.ChatUIKitArrowItemView
+            <io.agora.chat.uikit.widget.ChatUIKitArrowItemView
                 android:id="@+id/item_group_name"
                 android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@+id/item_spacing"
@@ -149,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp"/>
 
-            <com.hyphenate.easeui.widget.ChatUIKitArrowItemView
+            <io.agora.chat.uikit.widget.ChatUIKitArrowItemView
                 android:id="@+id/item_group_describe"
                 android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@+id/item_group_name"

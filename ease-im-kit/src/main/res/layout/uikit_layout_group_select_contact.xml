@@ -46,7 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
 
-            <com.hyphenate.easeui.widget.ChatUIKitCustomAvatarView
+            <io.agora.chat.uikit.widget.ChatUIKitCustomAvatarView
                 android:id="@+id/em_presence"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

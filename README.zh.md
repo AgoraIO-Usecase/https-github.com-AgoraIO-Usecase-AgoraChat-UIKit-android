@@ -2,15 +2,14 @@
 
 _[English](README.md) | 中文_
 
-单群聊 UIKit，是基于环信 IM SDK 的一款 UI 组件库，它提供了一些通用的 UI 组件，例如‘会话列表’、‘聊天界面’和‘联系人列表’等，开发者可根据实际业务需求通过该组件库快速地搭建自定义 IM 应用。单群聊 UIKit 中的组件在实现 UI 功能的同时，调用 IM SDK 相应的接口实现 IM 相关逻辑和数据的处理，因而开发者在 UIKit 时只需关注自身业务或个性化扩展即可。
+单群聊 UIKit，是基于Agora IM SDK 的一款 UI 组件库，它提供了一些通用的 UI 组件，例如‘会话列表’、‘聊天界面’和‘联系人列表’等，开发者可根据实际业务需求通过该组件库快速地搭建自定义 IM 应用。单群聊 UIKit 中的组件在实现 UI 功能的同时，调用 IM SDK 相应的接口实现 IM 相关逻辑和数据的处理，因而开发者在 UIKit 时只需关注自身业务或个性化扩展即可。
 
-本指南提供了 chat_uikit 框架在Android开发中的概述和使用示例，并介绍了此 UIKit 的各种组件和功能，让开发人员很好地了解 UIKit 的工作原理以及如何有效地使用它。
+本指南提供了 UIKit 框架在Android开发中的概述和使用示例，并介绍了此 UIKit 的各种组件和功能，让开发人员很好地了解 UIKit 的工作原理以及如何有效地使用它。
 
 ## 目录
 
 - [单群聊 UIKit](#单群聊-uikit)
   - [目录](#目录)
-  - [产品体验](#产品体验)
   - [开发环境](#开发环境)
   - [集成安装](#集成安装)
     - [Gradle 接入集成](#gradle-接入集成)
@@ -51,14 +50,6 @@ _[English](README.md) | 中文_
     - [UIKit 信息处理逻辑](#uikit-信息处理逻辑)
     - [更新 UIKit 缓存信息](#更新-uikit-缓存信息)
   - [UIKit 对明暗主题的支持](#uikit-对明暗主题的支持)
-
-## 产品体验
-
-在这个项目中，“app”文件夹中有一个最佳实践演示项目，供您构建自己的业务能力。
-
-如果你想体验 chat_uikit 的功能，你可以扫描以下二维码来尝试演示。
-
-![Demo](./image/demo.png)
 
 ## 开发环境
 
@@ -115,30 +106,30 @@ dependencyResolutionManagement {
 
 ### Module 远程依赖
 
-在 app 项目 build.gradle.kts 中添加以下依赖,其中 `x.y.z` 表示[最新版本号](https://central.sonatype.com/artifact/io.hyphenate/ease-chat-kit/versions):
+在 app 项目 build.gradle.kts 中添加以下依赖,其中 `x.y.z` 表示[最新版本号](https://central.sonatype.com/artifact/io.agora.rtc/chat-uikit/versions):
 
 ```kotlin
 
-implementation("io.hyphenate:ease-chat-kit:x.y.z")
+implementation("io.agora.rtc:chat-uikit:x.y.z")
 
 ```
 
 ### Module 源码集成
 
-从 github 获取 [Chat UIKit](https://github.com/easemob/easemob-uikit-android) 源码，按照下面的方式集成：
+从 github 获取 [Chat UIKit](https://github.com/AgoraIO-Usecase/AgoraChat-UIKit-android/tree/dev-kotlin) 源码，按照下面的方式集成：
 
-1. 在根目录 settings.gradle.kts 文件（/Gradle Scripts/settings.gradle.kts(Project Settings)）中添加如下代码：
+1. 在根目录 settings.gradle.kts 文件Project/settings.gradle.kts(Project Settings)中添加如下代码：
 
 ```kotlin
-include(":ease-chat-kit")
-project(":ease-chat-kit").projectDir = File("../easemob-uikit-android/ease-im-kit")
+include(":agora-chat-kit")
+project(":agora-chat-kit").projectDir = File("../AgoraChat-UIKit-android/ease-im-kit")
 ```
 
-2. 在 `build.gradle.kts` 文件 app/build.gradle(Module: app)中添加如下代码：
+2. 在 `build.gradle.kts` 文件（app/build.gradle）中添加如下代码：
 
 ```kotlin
 //chatuikit-android
-implementation(project(mapOf("path" to ":ease-chat-kit")))
+implementation(project(mapOf("path" to ":agora-chat-kit")))
 ```
 
 ### 防止代码混淆
@@ -146,8 +137,8 @@ implementation(project(mapOf("path" to ":ease-chat-kit")))
 在 `app/proguard-rules.pro` 文件中添加如下行，防止代码混淆：
 
 ```kotlin
--keep class com.hyphenate.** {*;}
--dontwarn  com.hyphenate.**
+-keep class io.agora.** {*;}
+-dontwarn  io.agora.**
 ```
 
 ## UIKit 基本项目结构
@@ -866,7 +857,7 @@ ChatUIKitContactsListFragment#Builder 提供的方法解释：
 | setOnContactSelectedListener()   | 设置条目选中事件监听器。                                                                                  |
 | setEmptyLayout()                 | 设置会话列表的空白页面。                                                                                  |
 | setCustomAdapter()               | 设置自定义的适配器，默认为 ChatUIKitConversationListAdapter。                                                    |
-| setCustomFragment()              | 设置自定义聊天 Fragment，需要继承自 ChatUIKitConversationListFragment。                                          |
+| setCustomFragment()              | 设置自定义聊天 Fragment，需要继承自 ChatUIKitContactsListFragment。                                          |
 
 #### 添加自定义联系人布局
 
@@ -911,7 +902,7 @@ ChatUIKitContactListLayout 提供的方法解释：
 | removeAdapter()                   | 移除指定适配器。                                              |
 | addItemDecoration()               | 添加会话列表的装饰器。                                        |
 | removeItemDecoration()            | 移除会话列表的装饰器。                                        |
-| setOnItemClickListener()          | 设置会话列表的条目点击监听，ChatUIKitConversationListFragment#Builder 提供了相应的设置方法。 |
+| setOnItemClickListener()          | 设置会话列表的条目点击监听，ChatUIKitContactsListFragment#Builder 提供了相应的设置方法。 |
 | setOnItemLongClickListener()      | 设置会话列表的条目长按监听。                                   |
 
 ## UIKit 提供的全局配置

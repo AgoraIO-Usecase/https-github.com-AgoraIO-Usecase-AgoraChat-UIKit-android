@@ -10,7 +10,6 @@ This guide provides an overview and usage examples of the chat_uikit framework i
 
 - [Chat UIKit Readme](#chat-uikit-readme)
   - [Table of contents](#table-of-contents)
-  - [Product Experience](#product-experience)
   - [Development Environment](#development-environment)
   - [Installation](#installation)
     - [Integrate with Gradle](#integrate-with-gradle)
@@ -52,14 +51,6 @@ This guide provides an overview and usage examples of the chat_uikit framework i
     - [Update information cached in UIKit](#update-information-cached-in-uikit)
   - [Support for dark and light themes](#support-for-dark-and-light-themes)
 
-
-## Product Experience
-
-In this project, there is a best-practice demonstration project in the `app` folder for you to build your own business capabilities.
-
-If you want to experience the functions of chat_uikit, you can scan the following QR code to try the demo.
-
-![Demo](./image/demo.png)
 
 ## Development Environment
 
@@ -116,26 +107,26 @@ dependencyResolutionManagement {
 
 ### Module remote dependency
 
-Add the following dependency to `build.gradle.kts` of the app project,where `x.y.z` indicates the [latest version](https://central.sonatype.com/artifact/io.hyphenate/ease-chat-kit/versions):
+Add the following dependency to `build.gradle.kts` of the app project,where `x.y.z` indicates the [latest version](https://central.sonatype.com/artifact/io.agora.rtc/chat-uikit/versions):
 
 ```kotlin
 
-implementation("io.hyphenate:ease-chat-kit:x.y.z")
+implementation("io.agora.rtc:chat-uikit:x.y.z")
 
 ```
 
 ### Integrate with the Module source code
 
-Acquire the Chat UIKit source code from the [GitHub repository](https://github.com/easemob/easemob-uikit-android) and integrate it in the following way:
+Acquire the Chat UIKit source code from the [GitHub repository](https://github.com/AgoraIO-Usecase/AgoraChat-UIKit-android/tree/dev-kotlin) and integrate it in the following way:
 
 1. Add the following code in the `settings.gradle.kts` file Project/settings.gradle.kts(Project Settings) in the root directory.
 
 ```kotlin
 include(":chat-uikit")
-project(":chat-uikit").projectDir = File("../easemob-uikit-android/ease-im-kit")
+project(":chat-uikit").projectDir = File("../AgoraChat-UIKit-android/ease-im-kit")
 ```
 
-2. Add the following code in `build.gradle.kts` (app/build.gradle(Module: app)).
+2. Add the following code in `build.gradle.kts` app/build.gradle(Module: app).
 
 ```kotlin
 //chat-uikit
@@ -147,8 +138,8 @@ implementation(project(mapOf("path" to ":chat-uikit")))
 Add the following lines to `app/proguard-rules.pro` to prevent code obfuscation.
 
 ```kotlin
--keep class com.hyphenate.** {*;}
--dontwarn  com.hyphenate.**
+-keep class io.agora.** {*;}
+-dontwarn  io.agora.**
 ```
 
 ## Basic project structure of chat_uikit

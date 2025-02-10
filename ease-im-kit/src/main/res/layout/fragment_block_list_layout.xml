@@ -6,7 +6,7 @@
     android:background="@color/ease_color_background"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_contact"
         app:titleBarTitle="@string/uikit_contact_title"
         app:titleBarTitleCenter="false"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"/>
 
-    <com.hyphenate.easeui.widget.ChatUIKitSearchView
+    <io.agora.chat.uikit.widget.ChatUIKitSearchView
         android:id="@+id/search_bar"
         style="@style/ease_widget_search_view"
         app:search_text="@string/uikit_search_block_user"/>
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.hyphenate.easeui.widget.RefreshLayout
+        <io.agora.chat.uikit.widget.RefreshLayout
             android:id="@+id/refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -35,9 +35,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 
-        </com.hyphenate.easeui.widget.RefreshLayout>
+        </io.agora.chat.uikit.widget.RefreshLayout>
 
-        <com.hyphenate.easeui.widget.ChatUIKitSidebar
+        <io.agora.chat.uikit.widget.ChatUIKitSidebar
             android:visibility="visible"
             android:id="@+id/side_bar_contact"
             app:layout_constraintTop_toTopOf="parent"

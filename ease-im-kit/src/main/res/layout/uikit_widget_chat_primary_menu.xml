@@ -39,7 +39,7 @@
             android:id="@+id/edittext_layout"
             style="@style/ease_chat_primary_menu_input_root">
 
-            <com.hyphenate.easeui.widget.ChatUIKitInputEditText
+            <io.agora.chat.uikit.widget.ChatUIKitInputEditText
                 android:id="@+id/et_sendmessage"
                 android:hint="@string/uikit_chat_primary_menu_input_hint"
                 style="@style/ease_chat_primary_menu_input_edit" />

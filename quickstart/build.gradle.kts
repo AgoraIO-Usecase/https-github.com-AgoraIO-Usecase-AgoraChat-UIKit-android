@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.easemob.quickstart"
+    namespace = "io.agora.quickstart"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.easemob.quickstart"
+        applicationId = "io.agora.quickstart"
         minSdk = 21
         targetSdk = 34
         versionCode = 1

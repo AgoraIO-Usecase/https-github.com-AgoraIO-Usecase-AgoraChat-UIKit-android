@@ -16,7 +16,7 @@
             app:layout_constraintHorizontal_bias="0"
             style="@style/ease_row_radio_select_style"/>
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/iv_userhead"
             app:layout_constraintBottom_toBottomOf="@id/bubble"
             app:layout_constraintEnd_toEndOf="parent"

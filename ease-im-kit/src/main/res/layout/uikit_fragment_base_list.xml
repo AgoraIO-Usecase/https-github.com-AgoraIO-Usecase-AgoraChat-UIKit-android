@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.widget.ChatUIKitSearchView
+    <io.agora.chat.uikit.widget.ChatUIKitSearchView
         android:id="@+id/search_bar"
         style="@style/ease_widget_search_view"/>
 
-    <com.hyphenate.easeui.widget.RefreshLayout
+    <io.agora.chat.uikit.widget.RefreshLayout
         android:id="@+id/srl_contact_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,6 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </com.hyphenate.easeui.widget.RefreshLayout>
+    </io.agora.chat.uikit.widget.RefreshLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

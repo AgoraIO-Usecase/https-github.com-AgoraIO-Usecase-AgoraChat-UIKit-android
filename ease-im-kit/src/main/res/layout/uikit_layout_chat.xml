@@ -4,20 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitMessageListLayout
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitMessageListLayout
         android:id="@+id/layout_chat_message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_above="@id/layout_menu"/>
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitInputMenu
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitInputMenu
         android:id="@+id/layout_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"/>
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitNotificationView
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitNotificationView
         android:id="@+id/layout_notification"
         android:layout_above="@id/layout_menu"
         style="@style/ease_chat_notification_style" />

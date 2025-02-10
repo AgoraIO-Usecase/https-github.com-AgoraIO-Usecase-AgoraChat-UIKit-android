@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.hyphenate.easeui.widget.ChatUIKitTitleBar
+    <io.agora.chat.uikit.widget.ChatUIKitTitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ease_toolbar_height"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <com.hyphenate.easeui.feature.chat.widgets.ChatUIKitInputMenu
+    <io.agora.chat.uikit.feature.chat.widgets.ChatUIKitInputMenu
         android:id="@+id/layout_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"

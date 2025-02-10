@@ -21,7 +21,7 @@
             app:tint="@color/ease_chat_record_delete_tint_color"
             style="@style/ease_chat_record_delete_button_style" />
 
-        <com.hyphenate.easeui.widget.ChatUIKitWaveView
+        <io.agora.chat.uikit.widget.ChatUIKitWaveView
             android:id="@+id/voice_wave"
             app:layout_constraintStart_toEndOf="@id/ib_action_voice_delete"
             app:layout_constraintEnd_toStartOf="@id/ib_action_voice_send"

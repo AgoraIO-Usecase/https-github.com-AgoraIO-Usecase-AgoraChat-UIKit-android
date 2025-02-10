@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.hyphenate.easeui.widget.ChatUIKitImageView
+    <io.agora.chat.uikit.widget.ChatUIKitImageView
         android:id="@+id/iv_userhead"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_userid"
         app:layout_constraintBottom_toTopOf="@id/view_bottom_divider">
 
-        <com.hyphenate.easeui.widget.ChatUIKitImageView
+        <io.agora.chat.uikit.widget.ChatUIKitImageView
             android:id="@+id/chatting_content_iv"
             style="@style/ease_chat_row_image_style"
             app:layout_constraintStart_toStartOf="parent"

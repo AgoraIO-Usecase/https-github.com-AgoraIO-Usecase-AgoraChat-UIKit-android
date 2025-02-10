@@ -11,11 +11,11 @@ val inputStream = project.rootProject.file("local.properties").inputStream()
 properties.load( inputStream )
 
 android {
-    namespace = "com.hyphenate.easeui.demo"
+    namespace = "io.agora.chat.uikit.demo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.hyphenate.easeui.demo"
+        applicationId = "io.agora.chat.uikit.demo"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
